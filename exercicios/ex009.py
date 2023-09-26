@@ -10,7 +10,7 @@ r7 = n * 7
 r8 = n * 8
 r9 = n * 9
 r10 = n * 10
-print('A tabuada de', n, 'é:')
+print('\033[1;4;33mA tabuada de', n, 'é:\033[m')
 print(n, 'x  0 =', r)
 print(n, 'x  1 =', r1)
 print(n, 'x  2 =', r2)
