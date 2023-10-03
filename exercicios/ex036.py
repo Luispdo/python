@@ -1,11 +1,11 @@
 valor = float(input('Qual o valor do imóvel? R$'))
-sal = float(input('Qual o salário do candidato? R$'))
+sal = float(input('Qual o salário do comprador? R$'))
 prazo = int(input('Em quantos anos será pago? '))
 pmês = prazo * 12
 prestação = valor / pmês
-print('{} prestações de R${:.2f}'.format(pmês, prestação))
+print('Para pagar uma casa de R${:.2f} em {} anos,'.format(valor, prazo), end='')
+print(' serão {} prestações de R${:.2f}.'.format(pmês, prestação))
 if sal * 0.3 >= valor / pmês:
-    print('O empréstimo de R${:.2f} pelo período de {} anos, está \033[1;32mAPROVADO\033[m.'.format(valor, prazo))
-    print('O valor da prestação será de R${:.2f} por mês.'.format(pmês))
+    print('Seu empréstimo foi \033[1;32mAPROVADO!\033[m')
 else:
-    print('O empréstimo foi \033[1;31mNEGADO\033[m.')
+    print('Seu empréstimo foi \033[1;31mNEGADO!\033[m')
