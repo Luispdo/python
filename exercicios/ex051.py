@@ -1,6 +1,8 @@
 s = 0
 pt = int(input('Digite o primeiro termo da PA: '))
 rz = int(input('Digite a razão da PA: '))
-for c in range(pt, 10, rz):
+dc = pt + (10 - 1) * rz # formula para calcular o décimo termo de uma progressão
+for c in range(pt, dc + rz, rz):
     '''s += pt'''
-    print(c)
+    print('{} '.format(c), end='--> ')
+print('Acabou!')
