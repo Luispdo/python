@@ -10,4 +10,4 @@ for x in range(1, 6):
             pesomaior = peso
         if pesomenor > peso:
             pesomenor = peso
-print('O maior peso foi {:.1f} e o menor peso foi {:.1f}.'.format(pesomaior, pesomenor))
+print('O maior peso foi {:.1f}Kg e o menor peso foi {:.1f}Kg.'.format(pesomaior, pesomenor))
