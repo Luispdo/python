@@ -2,7 +2,6 @@ idmedia = 0
 totidade = 0
 idhmv = 0
 hmv = ''
-midf = 0
 tot20 = 0
 for p in range(1, 5):
     print('----- {}ª PESSOA -----'.format(p))
