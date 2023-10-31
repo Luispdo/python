@@ -1,7 +1,5 @@
-s = 0
-while s != 'M' or s != 'F':
-    s = str(input('Digite o sexo: [M/F] ')).upper()
-    if s == 'M' == 'F':
-        print('O sexo digitado foi {}'.format(s))
-    else:
-        print('Opção incorreta, entre com S ou M, para encerrar!')
+s = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
+while s not in 'MF':
+    s = str(input('Opção incorreta. Por favor, informe o seu sexo: [M/F] ')).strip().upper()[0]
+print('Sexo {} registrado com sucesso!'.format(s))
+        
