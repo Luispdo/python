@@ -1,3 +1,4 @@
+from time import sleep
 menu = 0
 soma = 0
 mult = 0
@@ -16,16 +17,21 @@ while menu != 5:
     if menu == 1:
         soma = n1 + n2
         print('O resultado da soma entre {} e {} é igual a: {}'.format(n1, n2, soma))
-    if menu == 2:
+    elif menu == 2:
         mult = n1 * n2
         print('O resultado da multiplicação de {} por {} é igual a: {}'.format(n1, n2, mult))
-    if menu == 3:
+    elif menu == 3:
         if n1 > n2:
             maior = n1
         else:
             maior = n2
         print('O maior valor entre {} e {} é: {}'.format(n1, n2, maior))
-    if menu == 4:
+    elif menu == 4:
         n1 = int(input('Digite um número: '))
         n2 = int(input('Digite outro número: '))
+    elif menu == 5:
+        print('Finalizando...')
+    else:
+        print('Opção inválida! Tente novamente.')
+    sleep(2)
 print('------ FIM DO PROGRAMA ------')
