@@ -5,7 +5,7 @@ print('=-' * 15)
 ct = 0
 while True:
     soma = 0
-    computador = randint(0, 11)
+    computador = randint(0, 10)
     jogador = int(input('Diga um valor (0 a 10): '))
     soma = jogador + computador
     if jogador < 0 or jogador > 10:
