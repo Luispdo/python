@@ -5,11 +5,12 @@ print('=-' * 15)
 ct = 0
 while True:
     soma = 0
-    computador = randint(0, 10)
+    computador = randint(0, 11)
     jogador = int(input('Diga um valor (0 a 10): '))
     soma = jogador + computador
     if jogador < 0 or jogador > 10:
         print('Jogada inválida! Tente novamente.')
+        break
     jogada = str(input('Par ou Ímpar? [P/I]')).strip().upper()[0]
     resultado = soma % 2
     if resultado == 0:
