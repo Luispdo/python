@@ -11,7 +11,7 @@ while True:
     if jogador < 0 or jogador > 10:
         print('Jogada inválida! Tente novamente.')
         break
-    jogada = str(input('Par ou Ímpar? [P/I]')).strip().upper()[0]
+    jogada = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]
     resultado = soma % 2
     if resultado == 0:
         parimpar = 'PAR'
