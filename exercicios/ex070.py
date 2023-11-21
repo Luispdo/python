@@ -2,6 +2,7 @@ print('-' * 35)
 print('{: ^35}'.format('LOJA SUPER BARATÃO'))
 print('-' * 35)
 totp = menorp = totmil = ct = 0
+itemb = ' '
 while True:
     item = str(input('Nome do Produto: ')).strip()
     preço = float(input('Preço: R$'))
@@ -10,13 +11,16 @@ while True:
     resp = ' '
     if preço >= 1000:
         totmil += 1
-    if ct == 1:
+    '''if ct == 1:
         menorp = preço
-        itemb = ' '
+        itemb = item
     else:
         if preço < menorp:
             menorp = preço
-            itemb = item
+            itemb = item'''
+    if ct == 1 or preço < menorp:
+        menorp = preço
+        itemb = item
     while resp not in 'SN':
         resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if resp == 'N':
