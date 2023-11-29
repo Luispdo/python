@@ -1,12 +1,8 @@
-'''from random import randint
-for cont in range(1, 6):
-    num = int(tuple(randint(cont + 0, 10)))
-    print(num)
-
-tupla = tuple(randint(i + 1, 9) for i in range(randint(0, 5)))
-print(tupla)'''
-
-from random import sample
-num = tuple(sample(range(10), 5))
-#print(f'Os números gerados foram {sorted(num)}')
-print(f'Os valores sorteados foram: {num}')
+from random import randint
+num = (randint(1, 10), randint(1, 10), randint(1, 10),
+       randint(1, 10), randint(1, 10))
+print('Os valores sorteados foram: ', end='')
+for n in num:
+    print(f'{n} ', end='')
+print(f'\nO maior valor sorteado foi {max(num)}')
+print(f'O menor valor sorteado foi {min(num)}')
