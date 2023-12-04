@@ -26,10 +26,22 @@ for c, v in enumerate(valores):
     print(f'Na posição {c} encontrei o valor {v}!')
 print('Cheguei ao final da lista.')
 
-val = list()
+'''val = list()
 for cont in range(0, 5):
     val.append(int(input('Digite um valor: ')))
 for c, v in enumerate(val):
     print(f'Na posição {c} encontrei o valor {v}!')
-print('Cheguei ao final da lista.')
+print('Cheguei ao final da lista.')'''
+
+a = [2, 3, 4, 7]
+b = a
+print(f'Lista de A: {a}')
+print(f'Lista de B: {b}')
+b[2] = 8
+print(f'Lista de A: {a}')
+print(f'Lista de B: {b}')
+b = a[:]
+b[2] = 9
+print(f'Lista de A: {a}')
+print(f'Lista de B: {b}')
     
