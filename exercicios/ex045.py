@@ -1,8 +1,8 @@
 from time import sleep
 from random import randint
 itens = ('Pedra', 'Papel', 'Tesoura')
-comp = randint(0, 2)
 while True:
+    comp = randint(0, 2)
     print('\033[1;33m=\033[m' * 25)
     print('\033[1;32m=       JO-KEN-PÔ       =\033[m')
     print('\033[1;33m=\033[m' * 25)
