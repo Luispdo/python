@@ -3,12 +3,12 @@ listapar = []
 listaimpar = []
 while True:
     lista.append(int(input('Digite um número: ')))
-    
     resp = ' '
     while resp not in 'SN':
         resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if resp == 'N':
         break
+print('-=' * 30)
 print(f'A lista completa é {lista}')
 for n in lista:
     if n % 2 == 0:
