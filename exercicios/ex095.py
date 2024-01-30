@@ -30,8 +30,16 @@ for k, v in enumerate(time):
         print(f'{str(d):<15}', end='')
     print()
 print('-' * 40)
-
-'''print(f'O jogador {jogador["nome"]} jogou {len(jogador["gols"])} partidas.')
-for i, v in enumerate(jogador['gols']):
-    print(f'    => Na partida {i + 1}, fez {v} gols.')
-print(f'Foi um total de {jogador["total"]} gols.')'''
+while True:
+    busca = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+    if busca == 999:
+        break
+    if busca >= len(time):
+        print(f'ERRO! Não existe jogador com código {busca}!')
+    else:
+        print(f' -- LEVANTAMENTO DO JOGADOR {time[busca] ["nome"]}:')
+        for i, g in enumerate(time[busca] ['gols']):
+            print(f'    No jogo {i + 1} fez {g} gols.')
+    print('-' * 40)
+print('<< VOLTE SEMPRE >>')
+print()
